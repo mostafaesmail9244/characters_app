@@ -192,7 +192,6 @@ class _CharactersScreenState extends State<CharactersScreen> {
           if (connected) {
             return buildBlocWidget();
           } else {
-            setState(() {});
             return internet(
                 text: 'Offline', color: Colors.red, showProgress: true);
           }
